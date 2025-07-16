@@ -83,7 +83,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title> Soeurng Kosorl - Web Developer Developer Portfolio</title>
+        <title> Soeurng Kosorl - Front-End Web Developer Portfolio</title>
         <meta name="description" content=" specializing in React, Node.js, and modern web technologies. View my projects and get in touch!" />
       </Helmet>
 
@@ -177,7 +177,7 @@ function App() {
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">About Me</h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                 I am Soeurng Kosorl, a fourth-year Management Information Systems student at SETEC
-                Institute with a strong passion for web development. I am eager to apply my skills in HTML,
+                Institute with a strong passion for Front-End Web Developer. I am eager to apply my skills in HTML,
                 CSS, and JavaScript to real-world projects. Currently, I am seeking an internship to further
                 enhance my technical abilities, gain practical experience, and contribute to meaningful projects.
                 My goal is to continue growing as a developer and create innovative, user-friendly websites that have
