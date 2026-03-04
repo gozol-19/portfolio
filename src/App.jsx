@@ -175,120 +175,119 @@ function App() {
               className="text-center mb-16"
             >
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">About Me</h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                I am Soeurng Kosorl, a fourth-year Management Information Systems student at SETEC
-                Institute with a strong passion for Front-End Web Developer. I am eager to apply my skills in HTML,
-                CSS, and JavaScript to real-world projects. Currently, I am seeking an internship to further
-                enhance my technical abilities, gain practical experience, and contribute to meaningful projects.
-                My goal is to continue growing as a developer and create innovative, user-friendly websites that have
-                a positive impact.
-              </p>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+  I am Soeurng Kosorl, a fourth-year Management Information Systems student at SETEC Institute
+  and a Jr. Full-Stack Developer at CA Solution Cambodia. I have experience building 
+  company profile websites using React.js, integrating KHQR payments for kiosk applications, 
+  and connecting mobile apps with Django backends. I also developed school projects like 
+  hotel booking systems with Java and E-commerce sites with Django and Flutter. 
+  My goal is to continue growing as a developer and deliver real-world, user-friendly applications.
+</p>
             </motion.div>
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {/* Frontend Development */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+    className="relative group"
+  >
+    <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
+      <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center mb-4">
+        <Code className="h-6 w-6 text-white" />
+      </div>
+      <h3 className="text-lg font-semibold text-white mb-2">Frontend Development</h3>
+      <ul className="text-gray-300 text-sm space-y-1 list-disc list-inside">
+        <li>HTML, CSS, Tailwind CSS – Responsive layouts</li>
+        <li>JavaScript, React.js, Next.js – Interactive UIs</li>
+        <li>Flutter (Mobile frontend) – Basic API integration</li>
+      </ul>
+    </div>
+  </motion.div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Frontend Development */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="relative group"
-              >
-                <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center mb-4">
-                    <Code className="h-6 w-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Frontend Development</h3>
-                  <ul className="text-gray-300 text-sm space-y-1 list-disc list-inside">
-                    <li>HTML, CSS (Advanced) – Responsive layouts</li>
-                    <li>JavaScript, React.js (Intermediate) – Interactive UIs</li>
-                    <li>Next.js, Bootstrap (Beginner–Intermediate)</li>
-                  </ul>
-                </div>
-              </motion.div>
+  {/* Backend Development */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay: 0.1 }}
+    viewport={{ once: true }}
+    className="relative group"
+  >
+    <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
+      <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-pink-500 to-red-500 flex items-center justify-center mb-4">
+        <Code className="h-6 w-6 text-white" />
+      </div>
+      <h3 className="text-lg font-semibold text-white mb-2">Backend Development</h3>
+      <ul className="text-gray-300 text-sm space-y-1 list-disc list-inside">
+        <li>Java (CRUD, backend for hotel booking)</li>
+        <li>Django (E-commerce projects)</li>
+        <li>Basic RESTful API integration and testing</li>
+      </ul>
+    </div>
+  </motion.div>
 
-              {/* Version Control */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="relative group"
-              >
-                <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center mb-4">
-                    <Github className="h-6 w-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Version Control</h3>
-                  <ul className="text-gray-300 text-sm space-y-1 list-disc list-inside">
-                    <li>GitHub, GitLab (Intermediate)</li>
-                    <li>Code management & collaboration</li>
-                  </ul>
-                </div>
-              </motion.div>
+  {/* Kiosk & Payment Integration */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay: 0.2 }}
+    viewport={{ once: true }}
+    className="relative group"
+  >
+    <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
+      <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center mb-4">
+        <Globe className="h-6 w-6 text-white" />
+      </div>
+      <h3 className="text-lg font-semibold text-white mb-2">Kiosk & Payment</h3>
+      <ul className="text-gray-300 text-sm space-y-1 list-disc list-inside">
+        <li>KHQR Payment Integration</li>
+        <li>Frontend-Backend Coordination</li>
+        <li>Debugging & Performance Optimization</li>
+      </ul>
+    </div>
+  </motion.div>
 
-              {/* Backend Development */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="relative group"
-              >
-                <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-pink-500 to-red-500 flex items-center justify-center mb-4">
-                    <Code className="h-6 w-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Backend Development</h3>
-                  <ul className="text-gray-300 text-sm space-y-1 list-disc list-inside">
-                    <li>PHP, Laravel (Beginner)</li>
-                    <li>Basic CRUD and routing</li>
-                  </ul>
-                </div>
-              </motion.div>
+  {/* Version Control & Collaboration */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay: 0.3 }}
+    viewport={{ once: true }}
+    className="relative group"
+  >
+    <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
+      <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center mb-4">
+        <Github className="h-6 w-6 text-white" />
+      </div>
+      <h3 className="text-lg font-semibold text-white mb-2">Version Control</h3>
+      <ul className="text-gray-300 text-sm space-y-1 list-disc list-inside">
+        <li>GitHub, GitLab – Code management & collaboration</li>
+      </ul>
+    </div>
+  </motion.div>
 
-              {/* Additional Skills */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="relative group"
-              >
-                <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-yellow-400 to-pink-400 flex items-center justify-center mb-4">
-                    <Palette className="h-6 w-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Additional Skills</h3>
-                  <ul className="text-gray-300 text-sm space-y-1 list-disc list-inside">
-                    <li>Photoshop, Illustrator (Advanced)</li>
-                    <li>After Effects, Premiere Pro (Intermediate)</li>
-                    <li>Cinema 4D (Intermediate)</li>
-                  </ul>
-                </div>
-              </motion.div>
-
-              {/* Soft Skills */}
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="relative group"
-              >
-                <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-teal-400 to-emerald-500 flex items-center justify-center mb-4">
-                    <Smartphone className="h-6 w-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Soft Skills</h3>
-                  <ul className="text-gray-300 text-sm space-y-1 list-disc list-inside">
-                    <li>Time Management</li>
-                    <li>Communication</li>
-                    <li>Critical Thinking</li>
-                  </ul>
-                </div>
-              </motion.div>
-            </div>
+  {/* Soft Skills */}
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay: 0.4 }}
+    viewport={{ once: true }}
+    className="relative group"
+  >
+    <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-500/50 transition-all duration-300 group-hover:transform group-hover:scale-105">
+      <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-teal-400 to-emerald-500 flex items-center justify-center mb-4">
+        <Smartphone className="h-6 w-6 text-white" />
+      </div>
+      <h3 className="text-lg font-semibold text-white mb-2">Soft Skills</h3>
+      <ul className="text-gray-300 text-sm space-y-1 list-disc list-inside">
+        <li>Problem Solving & Debugging</li>
+        <li>Communication & Teamwork</li>
+        <li>Time Management & Critical Thinking</li>
+      </ul>
+    </div>
+  </motion.div>
+</div>
 
           </div>
         </section>
@@ -382,7 +381,7 @@ function App() {
                     <Mail className="h-6 w-6 text-white" />
                   </motion.a>
                   <motion.a
-                    href="https://t.me/today_1jj"
+                    href="https://t.me/soeurngkosorl"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
@@ -405,7 +404,7 @@ function App() {
               </div>
 
               <a
-                href="https://t.me/today_1jj"
+                href="https://t.me/soeurngkosorl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-12 py-4 text-lg rounded-lg transition-all duration-300"
@@ -421,7 +420,7 @@ function App() {
         <footer className="py-8 px-4 border-t border-white/10">
           <div className="max-w-6xl mx-auto text-center">
             <p className="text-gray-400">
-              © 2024 kosorl. Built with React & Tailwind CSS
+              © 2026 kosorl. Built with React & Tailwind CSS
             </p>
           </div>
         </footer>
